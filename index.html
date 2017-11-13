@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-social.css">
+  <link href="assets/css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
+  <div class="card-header">
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+      <a class="navbar-brand" href="#"><h4>Analisador Léxico</h4></a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="sobre.html"><h5>Sobre <i class="fa fa-question-circle" aria-hidden="true"></i></h5><span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <br>
+  <main class="content" style="margin-top:0px; display: flex; align-items: center; justify-content: center; flex-wrap: wrap;">
+    <form onsubmit="return false;" style="width: 70%;">
+      <div class="form-group">
+        <input id="word" type="text" class="form-control" value="" placeholder="Adicionar Tokens">
+        <br>
+        <button id="addWord" class="btn btn-success" title="Adicionar" onclick="addWordTocollection();">Adicionar <i class="glyphicon glyphicon-ok-circle"><i class="fa fa-plus" aria-hidden="true"></i></i></button>
+        <button id="buttonClear" class="btn btn-danger" onclick="removeWord();">Limpar Campos <i class="fa fa-eraser" aria-hidden="true"></i></button>
+      </div>
+    </div>
+    <div class="form-group">
+      <table class="list-group">
+        <hr>
+        <caption>Palavras:</caption>
+        <tbody  id="listWords"></tbody>
+      </table>
+      <hr>
+    </div>
+    <div class="form-group">
+      <input type="text" id="validate" placeholder="Validar Tokens" class="form-control" autocomplete="off"/>
+    </div>
+  </form>
+
+  <table style="width: 90%;" id="table-automaton"></table>
+
+</main>
+
+
+<footer class="card-footer">
+  <div class="footerPai">
+    <div>
+      <img style="margin-left: 16px;" src="http://www.uri.com.br/mobile/images/logo_uri.png" width="175" height="35" class="d-inline-block align-top" alt="">
+    </div>
+    <div class="">
+      <span>Linguagens Formais - Turma 2014 </span>
+    </div>
+    <div style="margin:10px;">
+      <a style="margin-right:9px; width:230px;" class="btn btn-block btn-social btn-github" href="https://github.com/CarlottoLeo">
+        <span class="fa fa-github"></span> Leonardo Dias Carlotto
+      </a>
+    </div>
+  </div>
+</footer>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/validator.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<div id="mascara"></div>
+<!-- <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
+</body>
+</html>
